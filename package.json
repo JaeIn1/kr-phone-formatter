@@ -1,0 +1,25 @@
+{
+  "name": "kr-phone-formatter",
+  "version": "1.0.1",
+  "description": "한국 전화번호 입력에 최적화된 포맷터",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^20.11.24",
+    "@types/react": "^19.2.7",
+    "rollup": "^4.53.3",
+    "tslib": "^2.8.1",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  }
+}
