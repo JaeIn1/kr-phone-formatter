@@ -116,17 +116,6 @@ export default PhoneInputForm;
 
 ---
 
-## 🧪 지원하는 전화번호 형식
-
-- **휴대폰**: 010-XXXX-XXXX
-- **서울**: 02-XXX-XXXX, 02-XXXX-XXXX
-- **지역번호**: 031~064-XXX-XXXX, 031~064-XXXX-XXXX
-
----
-
-## 📄 License
-
-MIT
 
 ## 🐛 Issues
 
