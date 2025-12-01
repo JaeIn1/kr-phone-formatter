@@ -118,4 +118,4 @@ export default PhoneInputForm;
 
 ### 🐛 Issues
 
-버그 제보나 기능 제안은 [GitHub Issues](https://github.com/your-username/kr-phone-formatter/issues)에서 해주세요.
+버그 제보나 기능 제안은 [GitHub Issues](https://github.com/JaeIn1/kr-phone-formatter/issues)에서 해주세요.
