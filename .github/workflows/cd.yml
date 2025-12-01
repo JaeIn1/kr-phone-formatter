@@ -1,11 +1,6 @@
 name: CD - NPM Publish
 
 on:
-  workflow_run:
-    workflows: ["CI - Build and Test"]
-    types:
-      - completed
-
   push:
     tags:
       - "v[0-9]+.[0-9]+.[0-9]+"
@@ -13,8 +8,6 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-
-    if: github.event.workflow_run.conclusion == 'success' || github.event_name == 'push'
 
     steps:
       - name: Checkout Code
@@ -26,11 +19,10 @@ jobs:
           node-version: 20
           registry-url: "https://registry.npmjs.org"
 
-      - name: Download Artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: kr-phone-formatter-dist
-          path: dist/
+      - name: Install Dependencies and Build
+        run: |
+          npm ci
+          npm run build
 
       - name: Publish to NPM
         run: npm publish
