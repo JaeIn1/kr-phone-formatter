@@ -1,6 +1,6 @@
 {
   "name": "kr-phone-formatter",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "한국 전화번호 입력에 최적화된 포맷터",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
